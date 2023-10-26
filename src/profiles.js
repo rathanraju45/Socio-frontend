@@ -1,4 +1,4 @@
-import rathanraju from './images/rathan_raju.jpg'
+import rathanraju from './images/rathan_raju.jpg';
 
 const profiles = 
 [
@@ -60,7 +60,7 @@ const profiles =
     {
         id:'9',
         username:'sunny',
-        profilepic:'../images/sunny.jpg'
+        profilepic:'nil'
     }
 
 ]

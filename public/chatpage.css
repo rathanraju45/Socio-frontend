@@ -85,7 +85,7 @@ body{
 }
 
 .Chat{
-    width: 100%;
+    width: 99%;
     margin-top: 1%;
     border: solid 0.5px var(--white-border);
 }
@@ -103,7 +103,7 @@ body{
 }
 
 .Chats{
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .chat-active{
@@ -111,8 +111,16 @@ body{
 }
 
 .Chats::-webkit-scrollbar{
-    width: 0;
-    height: 0;
+    width: 5px;
+    height: 5px;
+}
+
+.Chats::-webkit-scrollbar-thumb {
+    background: var(--white);
+    border-radius: 5px;
+}
+  
+.Chats::-webkit-scrollbar-button {
     display: none;
 }
 
@@ -131,7 +139,7 @@ body{
 .Chat-container{
     display: flex;
     flex-direction: column;
-    margin-right: 0 ;
+    margin-right: 0;
     width: 77%;
     height: 100%;
 }
@@ -217,21 +225,26 @@ body{
     line-height: 1.55vw;
     padding: 0.8vw;
 }
-.Messages::-webkit-scrollbar{
-    width: 0;
-    height: 0;
-    display: none;
-}
 
 .Messages-container{
     width: 100%;
     height: 85%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
-.Messages-container::-webkit-scrollbar{
-    width: 0;
-    height: 0;
+.Messages-container::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border: solid 0.5px var(--white-border);
+    border-radius: 5px;
+}
+  
+.Messages-container::-webkit-scrollbar-thumb {
+    background: var(--white);
+    border-radius: 5px;
+}
+
+.Messages-container::-webkit-scrollbar-button {
     display: none;
 }
 
